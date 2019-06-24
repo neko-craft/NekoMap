@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  background: url(assets/mc_map_topleft.gif) no-repeat
+}
+
+.bg > div { position: absolute }
+.bg > div:nth-child(1) {
+  width: calc(100% - 48px);
+  height: 24px;
+  left: 24px;
+  background: url(assets/mc_map_topmiddle.gif) repeat-x
+}
+.bg > div:nth-child(2) {
+  width: 24px;
+  height: 24px;
+  right: 0;
+  background: url(assets/mc_map_topright.gif) no-repeat
+}
+.bg > div:nth-child(3) {
+  width: 24px;
+  height: calc(100% - 48px);
+  top: 24px;
+  background: url(assets/mc_map_borderleft.gif) repeat-y
+}
+.bg > div:nth-child(4) {
+  width: 24px;
+  height: 24px;
+  bottom: 0;
+  background: url(assets/mc_map_bottomleft.gif) no-repeat
+}
+.bg > div:nth-child(5) {
+  width: calc(100% - 48px);
+  height: 24px;
+  left: 24px;
+  bottom: 0;
+  background: url(assets/mc_map_bottommiddle.gif) repeat-x
+}
+.bg > div:nth-child(6) {
+  width: 24px;
+  height: 24px;
+  right: 0;
+  bottom: 0;
+  background: url(assets/mc_map_bottomright.gif) no-repeat
+}
+.bg > div:nth-child(7) {
+  width: 24px;
+  height: calc(100% - 48px);
+  top: 24px;
+  right: 0;
+  background: url(assets/mc_map_borderright.gif) repeat-y
+}
+
+main {
+  outline: none;
+  position: absolute;
+  width: calc(100% - 48px);
+  height: calc(100% - 48px);
+  top: 24px;
+  left: 24px;
+  background-color: #d6be96;
+  overflow: hidden;
+}
+#map {
+  position: relative;
+  width: 0;
+}
+
+#map > div {
+  position: absolute;
+  height: 256px;
+  width: 256px;
+}

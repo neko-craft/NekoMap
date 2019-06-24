@@ -1,0 +1,7 @@
+.idea
+.gradle
+build
+node_modules
+out
+dist
+.cache
